@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Manchester United — Fanpage mẫu</title>
+<style>
+  :root{
+    --red:#c70101; --bg:#0f0f10; --card:#141416; --muted:#bdbdbd;
+    --glass: rgba(255,255,255,0.03);
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; font-family: Inter, Arial, Helvetica, sans-serif;
+    background: linear-gradient(180deg,#070708 0%, #0f0f10 100%);
+    color:#fff; -webkit-font-smoothing:antialiased;
+  }
+  header{
+    background: linear-gradient(90deg,var(--red),#9a0000);
+    padding:18px 24px; display:flex; gap:16px; align-items:center;
+  }
+  header h1{margin:0;font-size:20px;letter-spacing:0.6px}
+  nav{margin-left:auto; display:flex; gap:12px}
+  nav a{color:#fff;text-decoration:none;padding:8px 12px;border-radius:8px;font-weight:600}
+  nav a:hover{background:rgba(255,255,255,0.06)}
+  .container{max-width:1100px;margin:28px auto;padding:0 18px}
+  .hero{
+    display:grid; grid-template-columns:1fr 420px; gap:24px; align-items:center;
+  }
+  .hero .intro{
+    background:var(--glass); padding:28px;border-radius:12px;
+    box-shadow:0 8px 30px rgba(0,0,0,0.6);
+  }
+  .hero h2{margin:0 0 10px;font-size:32px;color:var(--red)}
+  .hero p{margin:0;color:var(--muted)}
+  .crest{
+    display:flex;align-items:center;justify-content:center;padding:20px;
+    background:linear-gradient(180deg,#111 0%,#18181a 100%); border-radius:12px;
+  }
+  .grid{
+    display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:18px;margin-top:22px;
+  }
+  .card{
+    background:var(--card); padding:18px;border-radius:12px; min-height:160px;
+    box-shadow:0 6px 20px rgba(0,0,0,0.5);
+  }
+  .card h3{margin:0 0 8px;color:var(--red)}
+  .small{font-size:14px;color:var(--muted)}
+  .players{display:flex;gap:12px;flex-wrap:wrap;margin-top:10px}
+  .player{display:flex;gap:10px;align-items:center;background:rgba(255,255,255,0.02);
+          padding:8px;border-radius:10px;min-width:180px}
+  .player svg{width:56px;height:56px;border-radius:8px;background:#111;padding:6px}
+  footer{margin:36px 0 60px;color:#888;text-align:center}
+  /* responsive */
+  @media(max-width:900px){
+    .hero{grid-template-columns:1fr}
+    header{flex-wrap:wrap; gap:8px}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <!-- crest (svg small) -->
+  <svg width="40" height="40" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+    <rect width="100" height="100" rx="16" fill="#c70101"/>
+    <text x="50" y="58" font-size="44" font-weight="700" text-anchor="middle" fill="#fff" font-family="Arial">MU</text>
+  </svg>
+  <h1>Manchester United — Fanpage mẫu</h1>
+  <nav>
+    <a href="#history">Lịch sử</a>
+    <a href="#trophies">Danh hiệu</a>
+    <a href="#players">Cầu thủ</a>
+    <a href="#transfers">Chuyển nhượng</a>
+    <a href="#fans">Người hâm mộ</a>
+    <a href="#manager">Huấn luyện viên</a>
+  </nav>
+</header>
+
+<main class="container">
+  <section class="hero" aria-labelledby="lead-title">
+    <div class="intro">
+      <h2 id="lead-title">Manchester United — A Great Team</h2>
+      <p>Manchester United được thành lập năm 1878 (ban đầu là Newton Heath LYR FC). CLB nổi tiếng với truyền thống chiến thắng, sân Old Trafford và lượng fan hùng hậu toàn cầu.</p>
+      <p class="small" style="margin-top:12px">Dưới đây là tóm tắt: lịch sử, danh hiệu, cầu thủ nổi bật, chuyển nhượng, lượng fan và huấn luyện viên.</p>
+    </div>
+
+    <div class="crest" aria-hidden>
+      <!-- big crest svg (guaranteed to show) -->
+      <svg width="320" height="220" viewBox="0 0 320 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Manchester United crest">
+        <rect width="320" height="220" rx="18" fill="#c70101"/>
+        <g transform="translate(20,20)">
+          <rect width="280" height="180" rx="12" fill="#111"/>
+          <text x="140" y="70" fill="#fff" font-size="28" font-weight="700" text-anchor="middle">MANCHESTER</text>
+          <text x="140" y="112" fill="#fff" font-size="40" font-weight="800" text-anchor="middle">UNITED</text>
+          <circle cx="60" cy="140" r="22" fill="#ffd54d"/>
+          <circle cx="220" cy="140" r="22" fill="#ffd54d"/>
+        </g>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Grid: history, trophies, manager -->
+  <section class="grid" style="margin-top:26px">
+    <article id="history" class="card" aria-labelledby="h1">
+      <h3 id="h1">Lịch sử hình thành</h3>
+      <p class="small">1878: Newton Heath LYR FC → 1902 đổi tên Manchester United. Thời kỳ hoàng kim: dưới Sir Alex Ferguson (1986–2013) CLB giành nhiều danh hiệu lớn trong nước và châu Âu.</p>
+    </article>
+
+    <article id="trophies" class="card" aria-labelledby="h2">
+      <h3 id="h2">Danh hiệu chính</h3>
+      <p class="small">- Giải quốc nội (Premier League / First Division): nhiều lần vô địch.<br>- UEFA Champions League: nhiều lần vô địch.<br>- FA Cup, League Cup, UEFA Europa League, v.v.</p>
+    </article>
+
+    <article id="manager" class="card" aria-labelledby="h3">
+      <h3 id="h3">Huấn luyện viên hiện tại</h3>
+      <p class="small">Huấn luyện viên (manager) chịu trách nhiệm chiến thuật, đào tạo và chuyển nhượng. (Bạn có thể cập nhật tên HLV ở file khi cần.)</p>
+    </article>
+  </section>
+
+  <!-- Players & transfers -->
+  <section style="margin-top:20px">
+    <div class="card" id="players" aria-labelledby="ply-title">
+      <h3 id="ply-title">Cầu thủ nổi bật</h3>
+      <div class="players">
+        <!-- inline svg "images" cho từng cầu thủ (chắc chắn hiển thị) -->
+        <div class="player">
+          <svg viewBox="0 0 100 100" aria-hidden>
+            <circle cx="50" cy="36" r="22" fill="#ffd54d"/>
+            <rect x="14" y="56" width="72" height="30" rx="6" fill="#222"/>
+            <text x="50" y="66" font-size="18" fill="#fff" text-anchor="middle" font-weight="700">CR</text>
+          </svg>
+          <div>
+            <strong>Cầu thủ A</strong><div class="small">Vị trí: Tiền đạo · Ghi nhiều bàn</div>
+          </div>
+        </div>
+
+        <div class="player">
+          <svg viewBox="0 0 100 100" aria-hidden>
+            <circle cx="50" cy="36" r="22" fill="#90caf9"/>
+            <rect x="14" y="56" width="72" height="30" rx="6" fill="#222"/>
+            <text x="50" y="66" font-size="18" fill="#fff" text-anchor="middle" font-weight="700">BM</text>
+          </svg>
+          <div>
+            <strong>Cầu thủ B</strong><div class="small">Vị trí: Tiền vệ · Sáng tạo</div>
+          </div>
+        </div>
+
+        <div class="player">
+          <svg viewBox="0 0 100 100" aria-hidden>
+            <circle cx="50" cy="36" r="22" fill="#a5d6a7"/>
+            <rect x="14" y="56" width="72" height="30" rx="6" fill="#222"/>
+            <text x="50" y="66" font-size="18" fill="#fff" text-anchor="middle" font-weight="700">GK</text>
+          </svg>
+          <div>
+            <strong>Cầu thủ C</strong><div class="small">Vị trí: Thủ môn · Chắn bóng xuất sắc</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" id="transfers" style="margin-top:12px" aria-labelledby="tr-title">
+      <h3 id="tr-title">Chuyển nhượng gần đây (ví dụ)</h3>
+      <p class="small">- Mua: Cầu thủ X (hợp đồng, phí chuyển nhượng).<br>- Bán/cho mượn: Cầu thủ Y → CLB Z.<br>Ghi chú: cập nhật chi tiết thật khi bạn có dữ liệu mới.</p>
+    </div>
+  </section>
+
+  <!-- Fans -->
+  <section style="margin-top:18px" class="grid">
+    <article id="fans" class="card" aria-labelledby="fans-title">
+      <h3 id="fans-title">Lượng fan</h3>
+      <p class="small">Man Utd có hàng chục triệu người hâm mộ toàn cầu, fan club ở nhiều quốc gia, mặt hàng áo đấu bán chạy và số lượt theo dõi lớn trên mạng xã hội.</p>
+    </article>
+
+    <article class="card" aria-labelledby="hon-title">
+      <h3 id="hon-title">Các danh hiệu (tổng quan)</h3>
+      <ul class="small" style="margin:8px 0 0 18px;line-height:1.6">
+        <li>Premier League / First Division — nhiều lần</li>
+        <li>FA Cup — nhiều lần</li>
+        <li>UEFA Champions League — nhiều lần</li>
+        <li>League Cup / Europa League / Community Shield</li>
+      </ul>
+    </article>
+  </section>
+
+  <footer>
+    <p class="small">File mẫu — Lưu thành <strong>index.html</strong>. Bạn có thể đưa lên GitHub và bật GitHub Pages (branch: main hoặc gh-pages) để chạy trực tiếp.</p>
+  </footer>
+</main>
+
+</body>
+</html>
